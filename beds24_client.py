@@ -18,7 +18,7 @@ def get_properties() -> list[dict]:
     return resp.json().get("getProperties", [])
 
 
-def get_daily_availability(room_id: int, days: int = 90) -> dict[date, int]:
+def get_daily_availability(room_id: int, days: int = 365) -> dict[date, int]:
     today = date.today()
     result = {}
 
