@@ -4,7 +4,7 @@ from beds24_client import get_daily_availability
 from ical_generator import build_ical_for_room
 from config import ROOM_MAPPING
 
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "ics_output")
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "docs")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 for room_id, name in ROOM_MAPPING.items():
